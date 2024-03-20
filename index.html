@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kayemba Supplies Ltd</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 0.5em;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+            padding: 0em;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 1em;
+            margin: 0 1em;
+        }
+
+        section {
+            padding: 2em;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 0em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .home-container {
+            display: flex;
+            flex-wrap: wrap-reverse; /* Reverse the order */
+            justify-content: space-between;
+            padding: 2em;
+        }
+
+        #home {
+            flex: 1;
+            max-width: 400px; /* Adjust the maximum width as needed */
+            bottom: 500px;
+            top: 500px;
+        }
+
+        .content {
+            display: flex; /* Ensure the content div is a flex container */
+            justify-content: center; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+            padding: 20px;
+            width: 100%; /* Set the width to 100% */
+            height: 400px; /* Set the height to your desired value */
+            max-height: 600px; /* Optionally, set a maximum height */
+            box-sizing: border-box; /* Ensure padding is included in the height */
+        }
+
+
+
+        .special {
+            flex: 1;
+            max-width: 400px; /* Adjust the maximum width as needed */
+            margin-right: auto; /* Align to the left */
+            overflow: hidden;
+            border-radius: 8px;
+            align-self: flex-start; /* Push to the top */
+        }
+
+
+
+        .slideshow-container {
+            flex: 1;
+            max-width: 400px; /* Adjust the maximum width as needed */
+            margin-left: 200px; /* Use margin-left instead of margin-right */
+            overflow: hidden;
+            border-radius: 8px;
+            bottom: 0px;
+            top: 0px;
+        }
+
+        .mySlides {
+            display: none;
+            text-align: center;
+        }
+
+        .slideshow-container img {
+            width: 100%;
+            height: 300px;
+            border-radius: 8px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .feature {
+            width: 300px;
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .feature img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .content {
+            padding: 20px; /* Add padding to the content */
+        }
+
+        .content h2 {
+            font-size: 24px; /* Example font size for heading */
+            color: #333; /* Example text color */
+        }
+
+        .content p {
+            font-size: 16px; /* Example font size for paragraphs */
+            color: #666; /* Example text color */
+            line-height: 1.5; /* Example line height */
+        }
+
+        /* Styles for links within the content */
+        .content a {
+            color: #007bff; /* Example link color */
+            text-decoration: none; /* Remove underline */
+        }
+
+        .content a:hover {
+            text-decoration: underline; /* Add underline on hover */
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Kayemba Supplies Ltd</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+
+    <div class="content">
+        
+        <div class="slideshow-container">
+            <div class="mySlides">
+                <img src="images/perfect-grilled-t-bone.jpg" alt="Slideshow Image 1">
+            </div>
+            <div class="mySlides">
+                <img src="images/Goats-chops3.jpg" alt="Slideshow Image 2">
+            </div>
+            <div class="mySlides">
+                <img src="images/beef-stew-8.jpg" alt="Slideshow Image 3">
+            </div>
+            <div class="mySlides">
+                <img src="images/filet-mignon-23.jpg" alt="Slideshow Image 4">
+            </div>
+            <div class="mySlides">
+                <img src="images/Boneless-beef.jpg" alt="Slideshow Image 5">
+            </div>
+            <div class="mySlides">
+                <img src="images/beef-kidney.jpg" alt="Slideshow Image 6">
+            </div>
+            <div class="mySlides">
+                <img src="images/liver_banner_image.png" alt="Slideshow Image 7">
+            </div>
+            <div class="mySlides">
+                <img src="images/SirloinSteak.jpg" alt="Slideshow Image 8">
+            </div>
+    
+            <script>
+                let slideIndex = 0;
+    
+                function showSlides() {
+                    let i;
+                    const slides = document.getElementsByClassName("mySlides");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) {
+                        slideIndex = 1;
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    setTimeout(showSlides, 3000); // Change slide every 3 seconds
+                }
+    
+                showSlides();
+            </script>
+        </div>
+        <div class="special">
+            <section id="home">
+                <h2>Your Trusted Source for Quality Beef and Goat meat</h2>
+                <p>Discover premium beef and goat products from local farms in Uganda, delivered to your doorstep.</p>
+            </section>
+        </div>
+        
+    </div>
+
+    
+    <footer>
+        <p>&copy; 2024 Kayemba Supplies Ltd. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
